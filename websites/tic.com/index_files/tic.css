@@ -1,0 +1,40 @@
+/* $Id: tic.css,v 1.4 2007-03-05 02:19:32 smoot Exp $ */
+
+body {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: black;
+	background-color: #F9FDC4;
+}
+
+div.page_title {
+	align: left;
+}
+
+/* Navigation bar */
+div.navigation {
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+h1.title {
+	display: inline;
+	font-family: Helvetica, Geneva, Arial, SunSans-Regular, sans-serif;
+}
+
+/* Highlight hrefs with color */
+a:hover {
+	background-color: red;
+}
+
+/* Partner page has icons for bullets */
+ul.partners {
+	list-style: none;
+}
+
+hr {
+	height: 2px;
+	background: red;
+}
+
+img {
+	border: 0;
+}
