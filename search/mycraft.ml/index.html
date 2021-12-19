@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MyCraft - PC</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<canvas></canvas>
+	<div id="chat" class="chat">
+		<div id="sender">
+			<input type="text" id="text">
+		</div>
+	</div>
+	<div id="my-inventory" class="inventory">
+		<h1 style="text-align: center; color: white;">My Inventory</h1>
+		<div id="itens">
+			<button onclick="selectBlock('grass')">Grass</button>
+			<button onclick="selectBlock('stone')">Stone</button>
+			<button onclick="selectBlock('wood')">Wood</button>
+			<button onclick="selectBlock('leaves')">Leaves</button>
+		</div>
+	</div>
+	<div class="menu" id="main-menu">
+		<h1 style="color: white;">Menu</h1>
+		<button onclick="closeMainMenu()">Continue</button>
+		<button onclick="openExpMenu()">Export map</button>
+		<button onclick="openImpMenu()">Import map</button>
+		<button onclick="window.close()">Exit</button>
+	</div>
+	<div id="exportMap" class="expMap">
+		<h1>Export your map for other users</h1>
+		<input type="text" id="my-map">
+		<div id="btns">
+			<button onclick="closeExpMenu()">OK</button>
+		</div>
+	</div>
+	<div id="importMap" class="impMap">
+		<h1>Import a map for game</h1>
+		<input type="text" id="json-map" placeholder="Place map with JSON code">
+		<div id="btns">
+			<button onclick="closeImpMenu(1)">OK</button>
+			<button onclick="closeImpMenu(0)">CANCEL</button>
+		</div>
+	</div>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+<script src="https://hynzjs.hynzstudios.repl.co/hynz.js"></script>
+</html>

@@ -1,0 +1,294 @@
+*{
+	font-family: sans-serif;
+}
+
+.buttons{
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.buttons #menu{
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: calc(50% - 20px);
+	width: 40px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #0006;
+}
+.buttons #inv{
+	position: absolute;
+	margin: 0;
+	top: 0;
+	left: calc(50% - 80px);
+	width: 40px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #00f6;
+}
+
+
+.buttons #up{
+	position: absolute;
+	margin: 0;
+	bottom: 100px;
+	left: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #down{
+	position: absolute;
+	margin: 0;
+	bottom: 0px;
+	left: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #right{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	left: 100px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #left{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	left: 0px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #break{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	right: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #f006;
+}
+.buttons #place{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	left: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0f06;
+}
+
+/* Botões camera */
+
+.buttons #up2{
+	position: absolute;
+	margin: 0;
+	bottom: 100px;
+	right: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #down2{
+	position: absolute;
+	margin: 0;
+	bottom: 0px;
+	right: 50px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #right2{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	right: 100px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+.buttons #left2{
+	position: absolute;
+	margin: 0;
+	bottom: 50px;
+	right: 0px;
+	width: 45px;
+	height: 45px;
+	border-radius: 15px;
+	background-color: #0006;
+}
+
+
+.chat{
+	position: absolute;
+	margin: 0;
+	display: none;
+	flex-direction: column;
+	bottom: 0;
+	left: 0;
+	width: 500px;
+	height: 300px;
+	background-color: #0006;
+}
+
+.chat #sender{
+	margin-top: auto;
+}
+
+.chat #sender input{
+	position: relative;
+	background-color: #0002;
+	width: calc(100% - 5px);
+	height: 100%;
+	border: none;
+	outline: none;
+	color: white;
+	font-size: 18px;
+}
+
+.inventory{
+	position: absolute;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #383838;
+}
+
+.inventory #back{
+	position: absolute;
+	margin: 0;
+	top: 0;
+	right: 0;
+	width: 50px;
+	height: 50px;
+	border: none;
+	outline: none;
+}
+
+.inventory #itens{
+	width: 100%;
+	height: calc(100% - 80px);
+	overflow-y: auto;
+	overflow-x: hidden;
+	background-color: #444;
+}
+
+.menu{
+	position: absolute;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 500px;
+	height: 100%;
+	left: calc(50% - 250px);
+	background-color: black;
+}
+
+.menu button{
+	height: 50px;
+	border: none;
+	outline: none;
+	font-size: 18px;
+	margin-bottom: 5px;
+	cursor: pointer;
+}
+.menu button:active{
+	background-color: #ccc;
+}
+
+
+.expMap{
+	position: absolute;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #888;
+}
+
+.expMap h1{
+	color: #438eb9;
+	background-color: #818181;
+}
+
+
+.impMap{
+	position: absolute;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background-color: #888;
+}
+.impMap input{
+	height: 50px;
+	outline: none;
+	border: none;
+	font-size: medium;
+	border-bottom: solid 2px #aaa;
+}
+.impMap input::placeholder{
+	font-size: medium;
+	transition: all 100ms ease;
+	visibility: visible !important;
+}
+.impMap input:focus::placeholder{
+	transform: translateY(-20px);
+	color: #438eb9;
+	font-size: small;
+	visibility: visible !important;
+}
+
+.impMap h1{
+	color: #438eb9;
+	background-color: #818181;
+}
+
+.impMap #btns{
+	position: absolute;
+	margin: 0;
+	bottom: 0;
+	text-align: right;
+	width: 100%;
+}
+.impMap #btns button{
+	font-size: 18px;
+	padding: 16px 32px;
+	border: none;
+	border-bottom: solid 2px #aaa;
+	outline: none;
+	color: white;
+	background-color: #438eb9;
+}
+.impMap #btns button:active{
+	background-color: #87afcb;
+}
