@@ -1,41 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WebFiles</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Nuphar</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
 	<link rel="icon" href="icon.png">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3305848478955358"
-     crossorigin="anonymous"></script>
 </head>
 <body>
-	<script src="script.js"></script>
+	<script src="searchengine.js"></script>
 
-	<div class="upbar">
-		<input type="text" id="search" placeholder="Domain">
-		<button class="button" onclick="search()">Search</button>
-	</div>
-	
-	<h1>
-		Welcome to WebFiles, find and see older websites from 1990 to 2006.<br>
-		Attention, not all websites are 100% complete, and many cannot be placed by weight and file quantities.
-	</h1>
-	
-	<strong>
-		WebFilesOrg - 2021
-	</strong>
+	<img src="logo.png" id="logo">
 
-	<div class="popup1">
-		<img src="welcome.png" class="popup">
-		<button class="popup ok" onclick="hidepopup('.popup1')"></button>
-	</div>
+	<input id="search" placeholder="Search" onkeyup="reloadResults()">
+	<button id="search_button" onclick="search(document.getElementById('search').value)">Search</button>
 
-	<h1>Domains</h1>
-	<ul>
-		<li>info.cern.ch</li>
-		<li>tic.com</li>
-		<li>acme.com</li>
-		<li>zombo.com</li>
+	<ul id="results">
+		<li><a href="search/example.tk/">example.tk</a></li>
 	</ul>
-
 </body>
 </html>
