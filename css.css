@@ -213,3 +213,20 @@ img{
 .fixed{
 	position: fixed;
 }
+
+::-webkit-scrollbar{
+width: 7px;
+height: 7px;
+}
+::-webkit-scrollbar-thumb{
+background: #fe6f27;
+border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover{
+background: #FF9054;
+}
+::-webkit-scrollbar-track{
+background: #1A1A1A;
+border-radius: 0px;
+box-shadow: inset 0px 0px 0px 0px #F0F0F0;
+}
