@@ -86,3 +86,49 @@ body, html{
 	left: 50%;
 	transform: translate(-50%)
 }
+
+#search_button1{
+	position: absolute;
+	left: 45%;
+	top: 55.5%;
+	transform: translate(-50%, -50%);
+
+	background-color: #474747;
+	color: #fc8549;
+	border: 2px solid #fe6f27;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	transition: .25s;
+}
+
+#search_button1:hover{
+	background-color: #fe6f27;
+	color: white;
+	border: 2px solid #fe6f27;
+}
+
+#search_button2{
+	position: absolute;
+	left: 55%;
+	top: 55.5%;
+	transform: translate(-50%, -50%);
+
+	background-color: #474747;
+	color: #fc8549;
+	border: 2px solid #fe6f27;
+	width: 100px;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	transition: .25s;
+}
+
+#search_button2:hover{
+	background-color: #fe6f27;
+	color: white;
+	border: 2px solid #fe6f27;
+}
