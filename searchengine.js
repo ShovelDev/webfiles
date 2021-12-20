@@ -1,11 +1,13 @@
-function search(url="index.html"){
-	var link = document.location.href.replace("index.html", "")
-	finallink = link + "/search/" + url + "/"
+function search(url){
+	if (document.getElementById('search').value != "") {
+		var link = document.location.href.replace("index.html", "")
+		finallink = link + "/search/" + url + "/"
 
-	var histname = localStorage.length
-	localStorage.setItem("Site Search (" + histname + ") ", url)
+		var histname = localStorage.length
+		localStorage.setItem("Site Search (" + histname + ") ", url)
 
-	document.location.href = finallink
+		document.location.href = finallink
+	}
 }
 
 function saveHist(url="index.html"){
@@ -32,4 +34,17 @@ function reloadResults(){
       li[i].style.display = "none";
     }
   }
+}
+
+function imlucky(){
+	var random = Math.random() * localStorage.length
+
+	var rlink = document.location.href.replace("index.html", "")
+	var rsite = localStorage.getItem(localStorage.key(random))
+	rfinallink = rlink + "/search/" + rsite + "/"
+
+	var rhistname = localStorage.length
+	//rlocalStorage.setItem("Site Search (" + rhistname + ") ", url)
+
+	document.location.href = rfinallink
 }
