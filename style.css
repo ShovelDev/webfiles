@@ -45,3 +45,11 @@ body, html{
 	background-color: transparent;
 	border: none;
 }
+
+#att{
+	position: absolute;
+	bottom: 0px;
+	color: white;
+	left: 50%;
+	transform: translate(-50%)
+}
