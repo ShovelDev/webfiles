@@ -3,9 +3,17 @@ function search(url="index.html"){
 	finallink = link + "/search/" + url + "/"
 
 	var histname = localStorage.length
-	localStorage.setItem("Site (" + histname + ") ", url)
+	localStorage.setItem("Site Search (" + histname + ") ", url)
 
 	document.location.href = finallink
+}
+
+function saveHist(url="index.html"){
+	var link = document.location.href.replace("index.html", "")
+	finallink = link + "/search/" + url + "/"
+
+	var histname = localStorage.length
+	localStorage.setItem("Site (" + histname + ") ", url)
 }
 
 function reloadResults(){
