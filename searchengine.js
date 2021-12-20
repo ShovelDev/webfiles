@@ -1,3 +1,5 @@
+var navbar = 0
+
 function search(url){
 	if (document.getElementById('search').value != "") {
 		var link = document.location.href.replace("index.html", "")
@@ -47,4 +49,20 @@ function imlucky(){
 	//rlocalStorage.setItem("Site Search (" + rhistname + ") ", url)
 
 	document.location.href = rfinallink
+}
+
+function toggleMore(){
+	navbar++
+
+	if (navbar > 1) {
+		navbar = 0
+	}
+
+	document.getElementById('navbar').style.transition = ".2s"
+
+	if (navbar == 1) {
+		document.getElementById('navbar').style.left = "0"
+	}else{
+		document.getElementById('navbar').style.left = "-100%"
+	}
 }
