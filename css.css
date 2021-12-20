@@ -1,6 +1,6 @@
 body, html{
 	background-color: #2f2f2f;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 
 *{
@@ -80,7 +80,7 @@ body, html{
 }
 
 #att{
-	position: absolute;
+	position: fixed;
 	bottom: 0px;
 	color: white;
 	left: 50%;
