@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Nuphar</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+	<script src="search.js"></script>
+
+	<img src="logo.png" id="logo1">
+
+	<input id="search1" placeholder="Search">
+	<button id="search_button4" onclick="reloadResults()">Search</button>
+
+	<script>
+		document.getElementById('search1').value = localStorage.getItem("search")
+		localStorage.removeItem("search")
+	</script>
+
+	<ul id="results">
+		<li><a onclick="saveHist('ola.com')" href="search/ola.com/">ola</a></li>
+		<li><a onclick="saveHist('mywork.nuphar.com')" href="search/mywork.nuphar.com/">mywork.nuphar.com</a></li>
+		<li><a onclick="saveHist('ddg-site.com')" href="search/ddg-site.com/">ddg-site</a></li>
+		<li><a onclick="saveHist('mycraft.ml')" href="search/mycraft.ml/">mycraft</a></li>
+		<li><a onclick="saveHist('worldbuilder.com')" href="search/worldbuilder.com/">worldbuilder</a></li>
+		<li><a onclick="saveHist('support.nuphar.com')" href="search/support.nuphar.com/">support.nuphar.com</a></li>
+		<li><a onclick="saveHist('example.tk')" href="search/example.tk/">example</a></li>
+	</ul>
+
+</body>
+</html>
