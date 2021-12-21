@@ -5,9 +5,6 @@ function search(url){
 		var link = document.location.href.replace("index.html", "")
 		finallink = link + "/search/" + url + "/"
 
-		var histname = localStorage.length
-		localStorage.setItem("Site Search (" + histname + ") ", url)
-
 		localStorage.setItem("search", url)
 
 		document.location.href = document.location.href.replace("index.html", "") + "results.html"
