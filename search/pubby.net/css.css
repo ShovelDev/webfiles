@@ -1,0 +1,25 @@
+body, html{
+	background-color: #519259;
+	overflow-x: hidden;
+	cursor: none;
+}
+
+canvas{
+	width: 600px;
+	height: 400px;
+	background-color: #064635;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border: 5px solid #F0BB62;
+	border-radius: 5px 0px 5px 0px;
+	box-shadow: 5px 5px 5px #064635;
+}
+
+@media only screen and (max-width: 650px) {
+	canvas{
+		width: 600px;
+		height: 300px;
+	}
+}
