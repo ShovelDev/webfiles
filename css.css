@@ -22,6 +22,20 @@ body, html{
 	outline: none;
 }
 
+#search1{
+	position: absolute;
+	top: 20%;
+	left: 1%;
+
+	background-color: #474747;
+	color: #fc8549;
+	border: 2px solid #fe6f27;
+	width: 300px;
+	height: 30px;
+	border-radius: 10px;
+	outline: none;
+}
+
 button{
 	background-color: #474747;
 	padding: 5px;
@@ -44,12 +58,10 @@ button:active{
 
 #results {
 	position: absolute;
-	top: 60%;
-	left: 50%;
+	top: 30%;
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
-	transform: translate(-50%)
 }
 
 #results li a {
@@ -134,6 +146,30 @@ button:active{
 	border: 2px solid #fe6f27;
 }
 
+#search_button4{
+	position: absolute;
+	left: 24%;
+	top: 20.5%;
+	margin-right: 3px;
+	margin-left: 3px;
+
+	background-color: #474747;
+	color: #fc8549;
+	border: 2px solid #fe6f27;
+	width: 60px;
+	height: 30px;
+	border-radius: 10px;
+	cursor: pointer;
+	outline: none;
+	transition: .25s;
+}
+
+#search_button4:hover{
+	background-color: #fe6f27;
+	color: white;
+	border: 2px solid #fe6f27;
+}
+
 @media only screen and (max-width: 1015px) {
 	#att{
 		left: 5px;
@@ -153,8 +189,27 @@ button:active{
 	}
 
 	#results {
-		top: 64%;
+		top: 33%;
 		left: 50%;
+		transform: translate(-50%);
+	}
+
+	#logo1{
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	#search1{
+		left: 50%;
+		transform: translate(-50%);
+	}
+
+	#search_button4{
+		width: 100px;
+		left: 50%;
+		top: 26%;
+		transform: translate(-50%);
 	}
 
 	#hotbar{
@@ -172,14 +227,22 @@ button:active{
 		display: none;
 	}
 
-	#results {
-		top: 64%;
-		left: 50%;
-	}
-
 	#att{
 		display: none;
 	}
+
+	#logo1{
+		display: none;
+	}
+
+	#search1{
+		top: 10%;
+	}
+
+	#search_button4{
+		top: 22.5%;
+	}
+
 }
 
 #navbar{
@@ -212,21 +275,4 @@ img{
 
 .fixed{
 	position: fixed;
-}
-
-::-webkit-scrollbar{
-width: 7px;
-height: 7px;
-}
-::-webkit-scrollbar-thumb{
-background: #fe6f27;
-border-radius: 3px;
-}
-::-webkit-scrollbar-thumb:hover{
-background: #FF9054;
-}
-::-webkit-scrollbar-track{
-background: #1A1A1A;
-border-radius: 0px;
-box-shadow: inset 0px 0px 0px 0px #F0F0F0;
 }
