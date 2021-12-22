@@ -1,0 +1,11 @@
+var manutencaoPage = false;
+
+if (manutencaoPage == true) {
+	var password = prompt("Website em Manutenção Digite a senha para entrar")
+	if (password == "ycx3fdkn5f3ed9fd") {
+		alert("Senha Correta ✔")
+	} else {
+		alert("Senha Incorreta ❌")
+		window.close()
+	}
+}
