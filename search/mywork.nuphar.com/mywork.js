@@ -25,6 +25,15 @@ function Ads(obj){
 	ads_button.style.display = "none"
 
 	new_ads.style.border = "1px solid black"
+	
+	if(obj.width != null){
+		ads_body.style.width = obj.width
+		new_ads.style.width = obj.width
+	}
+	if(obj.height != null){
+		ads_body.style.height = obj.height
+		new_ads.style.height = obj.height
+	}
 
 	//Target
 	if (obj.target != null) {
