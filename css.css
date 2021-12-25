@@ -98,7 +98,7 @@ button:active{
 
 #search_button1{
 	position: absolute;
-	left: 45%;
+	left: 50%;
 	top: 55.5%;
 	transform: translate(-50%, -50%);
 	margin-right: 3px;
