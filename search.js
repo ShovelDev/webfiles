@@ -16,6 +16,15 @@ function reloadResults(){
   }
 }
 
+addEventListener("keypress", (e)=>{
+  if (e.key == "Enter") {
+    if (document.getElementById("search1").value != "") {
+      reloadResults()
+    }
+  }
+})
+
 window.onload = function(){
   reloadResults()
+  document.getElementById("search1").focus();
 }
