@@ -21,5 +21,5 @@ function showPopup(popup){
 }
 
 function code(){
-	alert("<script src='https://mywork.netlify.app/mywork.js'></script>")
+	alert("<script src='https://peytta-mywork.netlify.app/mywork.js'></script>")
 }
