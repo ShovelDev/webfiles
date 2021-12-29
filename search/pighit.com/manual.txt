@@ -1,0 +1,23 @@
+Commands
+
+clear - clear the screen
+print - print a message in screen
+new - create a new file
+list - show all files
+read - print a file content
+edit - edit content of a file
+exe - execute a js script
+exit - close the system
+break - reset the system
+card - execute a card(js file)
+
+Commands - loop
+
+loop print - print a message in screen everytime
+loop exe - execute a js script everytime
+
+Js script - for cards and exe
+
+bk() - close the program and reset the system
+color(color) - set the system color
+cls() - clear the screen
