@@ -7,6 +7,16 @@ function bk(){
 	document.location.reload()
 }
 
+function final() {
+	echo("")
+	echo("")
+	echo("")
+	echo("")
+	echo("")
+	echo("")
+	echo("")
+}
+
 function cls(){
 	document.getElementById('output').innerText = ""
 }
