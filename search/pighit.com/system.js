@@ -128,3 +128,7 @@ addEventListener("keypress", (e)=>{
 		document.getElementById('command').value = ""
 	}
 })
+
+setInterval(function scrool(){
+	document.getElementById("bottom").scrollIntoView();
+}, 10)
