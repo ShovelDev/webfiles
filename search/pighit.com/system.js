@@ -104,7 +104,7 @@ addEventListener("keypress", (e)=>{
 												document.body.appendChild(script)
 											}else{
 												document.getElementById('output').innerText = document.getElementById('output').innerText + `
-												` + cmd_enter
+												` + "> Syntax Error"
 											}
 										}
 									}
