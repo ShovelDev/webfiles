@@ -21,4 +21,3 @@ Js script - for cards and exe
 bk() - close the program and reset the system
 color(color) - set the system color
 cls() - clear the screen
-click("text", "ip") - create a clickable button for websites
