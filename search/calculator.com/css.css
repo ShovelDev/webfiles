@@ -21,8 +21,7 @@ button{
 }
 
 button:active{
-	background: linear-gradient(180deg,yellow,pink);
-	border: 2px solid gold;
+	background: linear-gradient(160deg,#f5ff00,#b300ae);
 	box-shadow: inset 0px 0px 15px gold;
 }
 
