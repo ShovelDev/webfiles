@@ -28,5 +28,6 @@ function use(){
 		document.querySelector("button").style.transition = "2s";
 		document.querySelector("button").style.position = "absolute";
 		document.querySelector("button").style.top = "100%";
+		document.getElementById("button").style.transform = "rotate(-360deg)";
 	}
 }
