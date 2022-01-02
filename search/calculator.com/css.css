@@ -11,9 +11,9 @@ body, html{
 }
 
 button{
-	background: lime;
+	background: orange;
 	border-radius: 5px;
-	border: 2px solid green;
+	border: 2px solid gold;
 	width: 50px;
 	height: 50px;
 	box-shadow: inset 0px 0px 15px green;
@@ -21,7 +21,7 @@ button{
 }
 
 button:active{
-	background: yellow;
+	background: linear-gradient(180deg,yellow,pink);
 	border: 2px solid gold;
 	box-shadow: inset 0px 0px 15px gold;
 }
