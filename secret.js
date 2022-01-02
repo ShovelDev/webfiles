@@ -21,9 +21,11 @@ function use(){
 		eval(f)
 	}else{
 		document.getElementById("search1").style.transition = "2s";
-		document.getElementById("search1").style.transform = "rotate(360deg)";
-
 		document.querySelector("button").style.transition = "2s";
+		
+		document.getElementById("search1").style.transform = "rotate(360deg)";
 		document.querySelector("button").style.transform = "rotate(-360deg)";
+		document.getElementById("search1").style.transform = "rotate(0deg)";
+		document.querySelector("button").style.transform = "rotate(0deg)";
 	}
 }
