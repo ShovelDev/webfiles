@@ -20,14 +20,12 @@ function use(){
 	if(!magic){
 		eval(f)
 	}else{
-		document.getElementById("search1").style.transition = "2s";
-		document.getElementById("search1").style.position = "absolute";
-		document.getElementById("search1").style.top = "150%";
-		document.getElementById("search1").style.transform = "rotate(360deg)";
-		
-		document.querySelector("button").style.transition = "1s";
-		document.querySelector("button").style.position = "absolute";
-		document.querySelector("button").style.top = "150%";
-		document.querySelector("button").style.transform = "rotate(-360deg)";
+		setInterval(function(){
+			document.getElementById("search1").style.transition = "2s";
+			document.getElementById("search1").style.transform = "rotate(360deg)";
+
+			document.querySelector("button").style.transition = "2s";
+			document.querySelector("button").style.transform = "rotate(-360deg)";
+		},1000)
 	}
 }
