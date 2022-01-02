@@ -20,12 +20,10 @@ function use(){
 	if(!magic){
 		eval(f)
 	}else{
-		setInterval(function(){
-			document.getElementById("search1").style.transition = "2s";
-			document.getElementById("search1").style.transform = "rotate(360deg)";
+		document.getElementById("search1").style.transition = "2s";
+		document.getElementById("search1").style.transform = "rotate(360deg)";
 
-			document.querySelector("button").style.transition = "2s";
-			document.querySelector("button").style.transform = "rotate(-360deg)";
-		},1000)
+		document.querySelector("button").style.transition = "2s";
+		document.querySelector("button").style.transform = "rotate(-360deg)";
 	}
 }
