@@ -1,6 +1,7 @@
 var ester = parseInt(Math.random() * 3)
 var f = ""
 ester = parseInt(ester)
+magic = false
 
 if(ester == 0){
 	document.getElementById("secret").src = "icons/gamepad.png"
@@ -12,9 +13,15 @@ if(ester == 1){
 }
 if(ester == 2){
 	document.getElementById("secret").src = "icons/guy.png"
-	f = "document.querySelector('#logo1').style.transition = .2s;document.querySelector('#logo1').style.position = absolute;document.querySelector('#logo1').style.top = 100%"
+	magic = true
 }
 
 function use(){
-	eval(f)
+	if(!magic){
+		eval(f)
+	}else{
+		document.getElementById("search1").style.transition = ".2s";
+		document.getElementById("search1").style.position = "absolute";
+		document.getElementById("search1").style.top = "100%";
+	}
 }
