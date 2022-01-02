@@ -17,5 +17,5 @@ if(ester == 2){
 }
 
 function use(){
-	return f
+	eval(f)
 }
