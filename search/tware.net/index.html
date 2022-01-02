@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TwareOS</title>
+	<link rel="stylesheet" type="text/css" href="css.css">
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+	<script src="system.js"></script>
+	<div class="bar">
+		<button id="menu-icon" onclick="openmenu()"></button>
+	</div>
+
+	<div id="menubar">
+		<button onclick="closemenu()">Close</button>
+		<button class="menu-btn" onclick="closesystem()">Shutdown</button>
+	</div>
+
+	<div id="context_menu" class="hide">
+		
+	</div>
+
+	<!--Apps-->
+	<div id="apps">
+		<div id="https://peytta.netlify.app/" class="app app-nuphar" onclick="openapp(this)"></div>
+		<div id="https://peytta.netlify.app/search/pubby.net/" class="app app-pubby" onclick="openapp(this)"></div>
+		<div id="https://peytta.netlify.app/search/calculator.com/" class="app app-calc" onclick="openapp(this)"></div>
+</body>
+</html>
