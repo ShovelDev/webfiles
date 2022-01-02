@@ -27,7 +27,6 @@ function use(){
 		
 		document.querySelector("a").style.transition = "2s";
 		document.querySelector("a").style.position = "absolute";
-		document.querySelector("a").style.top = "150%";
-		document.querySelector("a").style.transform = "rotate(360deg)";
+		document.querySelector("a").style.top = "100%";
 	}
 }
