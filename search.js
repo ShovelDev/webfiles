@@ -31,7 +31,7 @@ window.onload = function(){
 
 var secret = document.getElementById("secret")
 var ester = Math.random() * 2
-var f = "
+var f = ""
 
 if(ester == 0){
 	secret.src = "icons/gamepad.png"
