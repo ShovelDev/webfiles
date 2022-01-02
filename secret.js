@@ -25,7 +25,7 @@ function use(){
 		document.getElementById("search1").style.top = "150%";
 		document.getElementById("search1").style.transform = "rotate(360deg)";
 		
-		document.querySelector("button").style.transition = "2s";
+		document.querySelector("button").style.transition = "1s";
 		document.querySelector("button").style.position = "absolute";
 		document.querySelector("button").style.top = "150%";
 		document.getElementById("button").style.transform = "rotate(-360deg)";
