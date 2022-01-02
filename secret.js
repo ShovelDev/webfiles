@@ -25,9 +25,9 @@ function use(){
 		document.getElementById("search1").style.top = "150%";
 		document.getElementById("search1").style.transform = "rotate(360deg)";
 		
-		document.querySelector("li").style.transition = "2s";
-		document.querySelector("li").style.position = "absolute";
-		document.querySelector("li").style.top = "150%";
-		document.querySelector("li").style.transform = "rotate(-360deg)";
+		document.getElementById("rs").style.transition = "2s";
+		document.getElementById("rs").style.position = "absolute";
+		document.getElementById("rs").style.top = "150%";
+		document.getElementById("rs").style.transform = "rotate(-360deg)";
 	}
 }
