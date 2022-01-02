@@ -9,7 +9,7 @@ if(ester == 0){
 }
 if(ester == 1){
 	document.getElementById("secret").src = "icons/pizza.png"
-	f = `document.querySelector("html").style.background = "yellow";document.querySelector("body").style.background = "yellow";document.body.style.color = "white"`
+	f = `document.querySelector("html").style.background = "yellow";document.querySelector("body").style.background = "yellow";document.body.style.color = "white";document.getElementById("logo1").src="icons/pizza.png"`
 }
 if(ester == 2){
 	document.getElementById("secret").src = "icons/guy.png"
