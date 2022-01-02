@@ -30,7 +30,7 @@ window.onload = function(){
 }
 
 var secret = document.getElementById("secret")
-var ester = Math.random() * 2
+var ester = parseInt(Math.random() * 2)
 var f = ""
 ester = parseInt(ester)
 
