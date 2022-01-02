@@ -20,8 +20,9 @@ function use(){
 	if(!magic){
 		eval(f)
 	}else{
-		document.getElementById("search1").style.transition = ".2s";
+		document.getElementById("search1").style.transition = "2s";
 		document.getElementById("search1").style.position = "absolute";
 		document.getElementById("search1").style.top = "100%";
+		document.getElementById("search1").style.transform = "rotate(360deg)";
 	}
 }
