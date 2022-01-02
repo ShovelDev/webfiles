@@ -1,4 +1,4 @@
-var ester = parseInt(Math.random() * 2)
+var ester = parseInt(Math.random() * 3)
 var f = ""
 ester = parseInt(ester)
 
