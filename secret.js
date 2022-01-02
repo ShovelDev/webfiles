@@ -28,6 +28,6 @@ function use(){
 		document.getElementById("logo1").style.transition = "2s";
 		document.getElementById("logo1").style.position = "absolute";
 		document.getElementById("logo1").style.top = "150%";
-		document.getElementById("logo1").style.transform = "rotate(-360deg)";
+		document.getElementById("logo1").style.transform = "rotate(360deg)";
 	}
 }
