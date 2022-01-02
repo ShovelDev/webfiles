@@ -12,8 +12,7 @@ if(ester == 1){
 }
 if(ester == 2){
 	document.getElementById("secret").src = "icons/guy.png"
-	f = "document.querySelector('#search1').style.transition = .2s;document.querySelector('#search1').style.position = absolute;document.querySelector('#search1').style.top = 100%;"
-	f = f + "document.querySelector('#logo1').style.transition = .2s;document.querySelector('#logo1').style.position = absolute;document.querySelector('#logo1').style.top = 100%"
+	f = "document.querySelector('#logo1').style.transition = .2s;document.querySelector('#logo1').style.position = absolute;document.querySelector('#logo1').style.top = 100%"
 }
 
 function use(){
