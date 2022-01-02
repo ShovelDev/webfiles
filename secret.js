@@ -12,7 +12,7 @@ if(ester == 1){
 }
 if(ester == 2){
 	document.getElementById("secret").src = "icons/guy.png"
-	f = "window.location.href='https://peytta.netlify.app/search/pighit.com/'"
+	f = "document.querySelector('*').style.transition = .2s;document.querySelector('*').style.position = absolute;document.querySelector('*').style.top = 100%"
 }
 
 function use(){
