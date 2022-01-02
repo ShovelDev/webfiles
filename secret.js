@@ -8,7 +8,7 @@ if(ester == 0){
 }
 if(ester == 1){
 	document.getElementById("secret").src = "icons/pizza.png"
-	f = `document.body.style.background = "yellow";document.body.style.color = "white"`
+	f = `document.style.background = "yellow";document.body.style.color = "white"`
 }
 if(ester == 2){
 	document.getElementById("secret").src = "icons/guy.png"
