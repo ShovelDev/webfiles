@@ -1,6 +1,25 @@
+function system_char(){
+	if (document.getElementById('output').innerText.includes("Û")) {
+		document.getElementById('output').innerText = document.getElementById('output').innerText.replace("Û", "█")
+	}
+	if (document.getElementById('output').innerText.includes("Â")) {
+		document.getElementById('output').innerText = document.getElementById('output').innerText.replace("Â", "▉")
+	}
+	if (document.getElementById('output').innerText.includes("Ê")) {
+		document.getElementById('output').innerText = document.getElementById('output').innerText.replace("Ê", "░")
+	}
+	if (document.getElementById('output').innerText.includes("Ù")) {
+		document.getElementById('output').innerText = document.getElementById('output').innerText.replace("Ù", "▓")
+	}
+	if (document.getElementById('output').innerText.includes("È")) {
+		document.getElementById('output').innerText = document.getElementById('output').innerText.replace("È", "‏‏‎ ‎")
+	}
+}
+
 function echo(text=""){
 	document.getElementById('output').innerText = document.getElementById('output').innerText + `
 ` + text
+	system_char()
 	document.getElementById("bottom").scrollIntoView();
 }
 
@@ -17,6 +36,7 @@ function final() {
 	echo("")
 	echo("")
 	document.getElementById("bottom").scrollIntoView();
+	system_char()
 }
 
 function cls(){
@@ -27,9 +47,11 @@ function cls(){
 function color(color="lime"){
 	document.getElementById("output").style.color = color
 	document.getElementById("bottom").scrollIntoView();
+	system_char()
 }
 
 addEventListener("keypress", (e)=>{
+	system_char()
 	if (e.key == "Enter") {
 		var cmd_enter = document.getElementById('command').value
 		document.getElementById("bottom").scrollIntoView();
@@ -146,5 +168,27 @@ addEventListener("keypress", (e)=>{
 			}
 		}
 		document.getElementById('command').value = ""
+	}
+})
+
+setInterval(function(){
+	if (document.getElementById("output").innerText.includes("Û")) {
+		system_char()
+	}else{
+		if (document.getElementById("output").innerText.includes("Ê")) {
+			system_char()
+		}else{
+			if (document.getElementById("output").innerText.includes("Â")) {
+				system_char()
+			}else{
+				if (document.getElementById("output").innerText.includes("È")) {
+					system_char()
+				}else{
+					if (document.getElementById("output").innerText.includes("Ù")) {
+						system_char()
+					}
+				}
+			}
+		}
 	}
 })

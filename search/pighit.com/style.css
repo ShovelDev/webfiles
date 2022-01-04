@@ -20,7 +20,7 @@ body, html{
 	outline: none;
 	background-color: black;
 	width: 100%;
-	border: 1px solid white;
+	border: none;
 	height: 50px;
 	position: absolute;
 	top: 100%;
