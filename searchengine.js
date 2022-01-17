@@ -1,34 +1,18 @@
 var navbar = 0
 function search(url){
+	var bar = document.getElementById('search').value
 	if (document.getElementById('search').value != "" || document.getElementById('search1').value != "") {
-		var link = document.location.href.replace("index.html", "")
-		finallink = link + "/search/" + url + "/"
+		if(bar.includes(".com") || bar.includes(".net") || bar.includes(".org") || bar.includes(".app") || bar.includes(".io") || bar.includes(".ml") || bar.includes(".me") || bar.includes(".top") || bar.includes(".online")){
+			document.href = "https://peytta.netlify.app/search/" + url
+		}else{
+			var link = document.location.href.replace("index.html", "")
+			finallink = link + "/search/" + url + "/"
 
-		localStorage.setItem("search", url)
+			localStorage.setItem("search", url)
 
-		document.location.href = document.location.href.replace("index.html", "") + "results.html"
+			document.location.href = document.location.href.replace("index.html", "") + "results.html"
+		}
 	}
-}
-
-function saveHist(url="index.html"){
-	var link = document.location.href.replace("index.html", "")
-	finallink = link + "/search/" + url + "/"
-
-	var histname = localStorage.length
-	localStorage.setItem("Site (" + histname + ") ", url)
-}
-
-function imlucky(){
-	var random = Math.random() * localStorage.length
-
-	var rlink = document.location.href.replace("index.html", "")
-	var rsite = localStorage.getItem(localStorage.key(random))
-	rfinallink = rlink + "/search/" + rsite + "/"
-
-	var rhistname = localStorage.length
-	//rlocalStorage.setItem("Site Search (" + rhistname + ") ", url)
-
-	document.location.href = rfinallink
 }
 
 function toggleMore(){
