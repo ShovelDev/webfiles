@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Peliopollis</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	
+	<audio id="sell_sound">
+		<source src="audio/sell.wav" type="audio/wav">
+	</audio>
+	<audio id="trash_sound">
+		<source src="audio/trash.wav" type="audio/wav">
+	</audio>
+	<audio id="alert_sound">
+		<source src="audio/alert.wav" type="audio/wav">
+	</audio>
+
+	<audio id="game" autoplay controls loop volume="0" style="width: 0px;">
+		<source src="audio/game.wav" type="audio/wav">
+	</audio>
+
+	<div id="card-3" class="card">
+		<h1>Protection</h1>
+
+		<button id="police" class="chose" onclick="contract()">Hire Police officer (100$)</button>
+		<button id="police-total">Police : 0</button>
+		<button id="prejudice">Prejudice : 0</button>
+		<button id="pay-salary" class="chose" onclick="pay_salary()">Pay Salary : 0</button>
+	</div>
+
+	<div id="card-2" class="card">
+		<h1>City</h1>
+
+		<button id="buy" onclick="buy()" class="chose">Buy House</button>
+		<button id="money">Total: 0</button>
+		<button id="house">Houses: 0</button>
+	</div>
+
+	<div id="card-1" class="card">
+		<h1>Nature</h1>
+
+		<button id="energy" onclick="sell()" class="chose">100</button>
+		<button id="forest" onclick="forest_add()" class="chose">100</button>
+		<button id="water" onclick="water_add()" class="chose">100</button>
+		<button id="trash" onclick="sell_trash()" class="chose">100</button>
+		<button id="toxic" onclick="clearn()" class="chose">100</button>
+	</div><!--Cards-->
+
+	<button onclick="city()" class="button1">City</button>
+	<button onclick="nature()" class="button1">Nature</button>
+	<button onclick="population()" class="button1">Protection</button>
+	<button id="autos" onclick="buy_autoSell()" class="button1">Buy Auto Sell (1k)</button>
+	<!--<button onclick="achv()" class="button1">Show Achievements </button>--><br>
+	<input type="range" class="button1" id="sound" min="0" max="1" value="1" onchange="sound()"><!--Hud-->
+
+	<div id="popup">
+		<h1>Welcome</h1>
+		<h5>Welcome to Peliopollis, your new city. Peliopollis was bought by your father and left heirloom to you. ENJOY THE CITY.</h5>
+		<button class="button1" onclick="play()">Play</button>
+	</div>
+
+	<div id="jornal">
+		<h1>News</h1>
+		<h5 id="message"></h5>
+		<button class="button2" onclick="closemsg()">Close</button>
+	</div>
+
+	<div id="shop">
+		<h1>Vendor</h1>
+		<h5 id="message1"></h5>
+		<button class="button2" onclick="accept()">Accept</button>
+		<button class="button2" onclick="closemsg1()">Close</button>
+	</div>
+
+	<!--
+	<div id="achievements">
+		<h1>Achievements</h1>
+		<button class="button2" onclick="closemsg2()">Close</button>
+	</div>
+	-->
+
+	<script src="sounds.js"></script>
+	<script src="police.js"></script>
+	<script src="game.js"></script>
+	<script src="loops.js"></script>
+</body>
+</html>
