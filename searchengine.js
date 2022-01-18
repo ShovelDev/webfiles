@@ -30,3 +30,11 @@ function toggleMore(){
 		document.getElementById('navbar').style.left = "-100%"
 	}
 }
+
+addEventListener("keypress", (e)=>{
+  if (e.key == "Enter") {
+    if (document.getElementById("search").value != "") {
+      search(document.getElementById("search").value)
+    }
+  }
+})
