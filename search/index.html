@@ -17,7 +17,7 @@
       snapshot.forEach(function(childSnapshot) {
         var childData = childSnapshot.val();
         const web = db.ref("websites/" + w.replace('.', "-"));
-        const site = childData;
+        console.log(childData)
         document.write(site.html)
       });
   });
