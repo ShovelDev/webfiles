@@ -18,6 +18,7 @@
         var childData = childSnapshot.val();
         const web = db.ref("websites/" + w.replace('.', "-"));
         console.log(childData)
+        const site = childData;
         document.write(site.html)
       });
   });
