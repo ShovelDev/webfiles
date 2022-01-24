@@ -20,7 +20,7 @@
           document.write(site)
       });
   });*/
-  const ref = firebase.database().ref("websites");
+  const ref = firebase.database().ref("websites/" + w.replace('.', "-"));
   ref.on("value", snap => {
    console.log(snap.key); // this key will output users
    console.log(snap.val()); // this method will return full user
