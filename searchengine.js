@@ -1,3 +1,14 @@
+const firebaseConfig = {
+	apiKey: "AIzaSyCu9TGTou6Id3TynVydlO3IWx1vFWiJBZQ",
+	authDomain: "peytta-publish.firebaseapp.com",
+	projectId: "peytta-publish",
+	storageBucket: "peytta-publish.appspot.com",
+	messagingSenderId: "724961723185",
+	appId: "1:724961723185:web:1b0a87ae8715dec7a6a610"
+};
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
 var navbar = 0
 function search(url){
 	var bar = document.getElementById('search').value
