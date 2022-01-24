@@ -1,6 +1,6 @@
 <script>
   var w = localStorage.getItem("website")
-  const web = db.ref("websites/");
+  const web = db.ref("websites/" + w.replace('.', "-"));
   const site = snapshot.val();
   document.write(site.html)
 </script>
