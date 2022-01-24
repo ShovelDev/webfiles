@@ -15,10 +15,8 @@
   var ref = firebase.database().ref("websites");
   ref.child(w.replace('.', "-")).orderByChild('name').equalTo(w.replace('.', "-")).on("value", function(snapshot) {
       snapshot.forEach(function(data) {
-          console.log(data.key);
           var childData = snapshot.val();
           const web = db.ref("websites/" + w.replace('.', "-"));
-          console.log(childData)
           const site = data.key;
           document.write(site.html)
       });
