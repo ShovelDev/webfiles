@@ -21,11 +21,10 @@
       });
   });*/
   const ref = firebase.database().ref("websites");
-  const query = ref.child("test-com").orderByValue().equalTo("html")
-  const results = query.get();
-  results.forEach((snapshot) => {
-    console.log(`Found value ${snapshot.val()} under key ${snapshot.key}`)
-  })
+  ref.on("value", snap => {
+   console.log(snap); // this key will output users
+   console.log(snap.key); // this method will return full user
+  });
 
 
 </script>
