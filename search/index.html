@@ -15,8 +15,10 @@
   const db = firebase.database();
   var ref = firebase.database().ref("websites");
   ref.orderByChild('websites').equalTo('test-com').on("value", function(snapshot) {
-    snapshot.forEach((function(child) { console.log(child.key) })); 
-  });
+    snapshot.forEach((function(child) {
+      console.log(child.key)
+    }); 
+  }));
   ref.on("value", function(snapshot) {
    snapshot.forEach(function(childSnapshot) {
     var childData = childSnapshot.val();
