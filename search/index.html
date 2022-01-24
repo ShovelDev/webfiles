@@ -14,18 +14,13 @@
   const db = firebase.database();
   var ref = firebase.database().ref("websites");
   ref.child(w.replace('.', "-")).orderByChild('name').equalTo(w.replace('.', "-")).on("value", function(snapshot) {
-      console.log(snapshot.val());
       snapshot.forEach(function(data) {
           console.log(data.key);
-      });
-  });
-  ref.on('value', function(snapshot) {
-      snapshot.forEach(function(childSnapshot) {
-        var childData = childSnapshot.val();
-        const web = db.ref("websites/" + w.replace('.', "-"));
-        //console.log(childData)
-        const site = childData;
-        document.write(site.html)
+          var childData = snapshot.val();
+          const web = db.ref("websites/" + w.replace('.', "-"));
+          console.log(childData)
+          const site = childData;
+          document.write(site.html)
       });
   });
 
