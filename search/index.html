@@ -12,6 +12,7 @@
   var w = localStorage.getItem("website")
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
+  const ref = firebase.database().ref("websites");
   /*ref.child(w.replace('.', "-")).orderByChild('name').equalTo(w.replace('.', "-")).on("value", function(snapshot) {
       snapshot.forEach(function(data) {
           var childData = snapshot.val();
@@ -20,9 +21,11 @@
           document.write(site)
       });
   });*/
-  const ref = firebase.database().ref("websites");
   ref.orderByChild(w.replace('.', "-")).on("child_added", snap => {
-   document.write(snap.val())
+    console.log(snap.key)
+    console.log(snap)
+    console.log(snap.key.html)
+   document.write(snap.key)
   });
 
 </script>
