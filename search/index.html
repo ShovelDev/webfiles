@@ -15,8 +15,10 @@
   var ref = firebase.database().ref("websites");
   ref.on('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
+        var childId = childSnapshot.key();
         var childData = childSnapshot.val();
         const web = db.ref("websites/" + w.replace('.', "-"));
+        console.log(childId)
         console.log(childData)
         const site = childData;
         document.write(site.html)
