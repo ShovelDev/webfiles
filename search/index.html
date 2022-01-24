@@ -1,3 +1,6 @@
 <script>
-  document.location.href = "https://peytta.netlify.app/"
+  var w = localStorage.getItem("website")
+  const web = db.ref("websites/");
+  const site = snapshot.val();
+  document.write(site.html)
 </script>
