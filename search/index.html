@@ -12,15 +12,20 @@
   var w = localStorage.getItem("website")
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
-  var ref = firebase.database().ref("websites");
-  ref.child(w.replace('.', "-")).orderByChild('name').equalTo(w.replace('.', "-")).on("value", function(snapshot) {
+  /*ref.child(w.replace('.', "-")).orderByChild('name').equalTo(w.replace('.', "-")).on("value", function(snapshot) {
       snapshot.forEach(function(data) {
           var childData = snapshot.val();
           const web = db.ref("websites/" + w.replace('.', "-"));
           const site = data;
           document.write(site)
       });
-  });
+  });*/
+  const ref = firebase.database().ref("websites");
+  const query = ref.child("active").orderByValue().equalTo("test-com")
+  const results = query.get();
+  results.forEach((snapshot) => {
+    console.log(`Found value ${snapshot.val()} under key ${snapshot.key}`)
+  })
 
 
 </script>
