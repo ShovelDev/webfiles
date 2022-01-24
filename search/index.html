@@ -22,11 +22,9 @@
       });
   });*/
 ref.once('value').then(snap => {
-  o0 = snap.val()
+  o0 = snap.val.html
   console.log('In the once o0:')
   console.log(o0) // works perfectly
-  const uid_tugas = firebase.database().ref(w.replace('.', "-"))
-  console.log(uid_tugas)
 }).then( in0 => {
   // ...
 });
