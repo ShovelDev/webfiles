@@ -22,7 +22,7 @@
   });*/
   const ref = firebase.database().ref("websites");
   ref.orderByChild(w.replace('.', "-")).on("child_added", snap => {
-   document.write(snap.val().html)
+   document.write(snap.key.val().html)
   });
 
 
