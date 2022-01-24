@@ -13,7 +13,7 @@
   var w = localStorage.getItem("website")
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
-  firebase.firestore().collection(w.replace('.', "-")).doc("websites").get().then(snapshot => {
+  firebaseApp.firestore().collection(w.replace('.', "-")).doc("websites").get().then(snapshot => {
     const web = db.ref("websites/" + w.replace('.', "-"));
     const site = snapshot.data().score;
     document.write(site.html)
