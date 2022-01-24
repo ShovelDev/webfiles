@@ -21,9 +21,8 @@
       });
   });*/
   const ref = firebase.database().ref("websites");
-  var webdocument = w.replace('.', "-")
-  ref.orderByChild(webdocument).limitToFirst(1).on("child_added", snap => {
-   document.write(snap.key.val())
+  ref.orderByChild(w.replace('.', "-")).limitToFirst(1).on("child_added", snap => {
+   document.write(snap.key.html)
   });
 
 </script>
