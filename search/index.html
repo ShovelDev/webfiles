@@ -19,7 +19,7 @@
           var childData = snapshot.val();
           const web = db.ref("websites/" + w.replace('.', "-"));
           console.log(childData)
-          const site = childData;
+          const site = data.key;
           document.write(site.html)
       });
   });
