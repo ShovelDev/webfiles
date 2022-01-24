@@ -16,7 +16,9 @@
   ref.on('value', function(snapshot) {
       snapshot.forEach(function(childSnapshot) {
         var childData = childSnapshot.val();
-        console.log(childData)
+        const web = db.ref("websites/" + w.replace('.', "-"));
+        const site = childData;
+        document.write(site.html)
       });
   });
 
