@@ -14,6 +14,9 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
   var ref = firebase.database().ref("websites");
+  ref.orderByChild('email').equalTo('wal@aol.com').on("value", function(snapshot) {
+    snapshot.forEach((function(child) { console.log(child.key) }); 
+  });
   ref.on("value", function(snapshot) {
    snapshot.forEach(function(childSnapshot) {
     var childData = childSnapshot.val();
