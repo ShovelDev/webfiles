@@ -21,11 +21,9 @@
           document.write(site)
       });
   });*/
-  ref.orderByChild(w.replace('.', "-")).on("child_added", snap => {
+  ref.once("value", snap => {
     console.log(snap.key)
-    console.log(snap)
-    console.log(snap.key.html)
-   document.write(snap.key)
+    console.log(snap.val())
   });
 
 </script>
