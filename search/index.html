@@ -10,10 +10,12 @@
     messagingSenderId: "995827631073",
     appId: "1:995827631073:web:a16b96066123bf027cc8a0"
   };
-  firebase.initializeApp(firebaseConfig);
-  const db = firebase.database();
   var w = localStorage.getItem("website")
-  const web = db.ref("websites/" + w.replace('.', "-"));
-  const site = snapshot.val();
-  document.write(site.html)
+  firebaseApp.firestore().collection(w.replace('.', "-")).doc("websites").get().then(snapshot => {
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.database();
+    const web = db.ref("websites/" + w.replace('.', "-"));
+    const site = snapshot.data().score;
+    document.write(site.html)
+  });
 </script>
