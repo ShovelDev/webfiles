@@ -14,7 +14,8 @@ function search(url){
 	var bar = document.getElementById('search').value
 	if (document.getElementById('search').value != "" || document.getElementById('search1').value != "") {
 		if(bar.includes(".com") || bar.includes(".net") || bar.includes(".org") || bar.includes(".app") || bar.includes(".io") || bar.includes(".ml") || bar.includes(".me") || bar.includes(".top") || bar.includes(".online")){
-			document.location.href = "https://peytta.netlify.app/search/" + url
+			document.location.href = "https://peytta.netlify.app/search/index.html"
+			localStorage.setItem("website", url)
 		}else{
 			var link = document.location.href.replace("index.html", "")
 			finallink = link + "/search/" + url + "/"
