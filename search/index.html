@@ -14,11 +14,13 @@
   firebase.initializeApp(firebaseConfig);
   const db = firebase.database();
   var ref = firebase.database().ref("websites");
-  ref.once("value", function(snapshot) {
-    snapshot.forEach(function(child) {
-      console.log(child.key+": "+child.val());
-    });
+  ref.on('value', function(snapshot) {
+      snapshot.forEach(function(childSnapshot) {
+        var childData = childSnapshot.val();
+        console.log(childData)
+      });
   });
+
   ref.on("value", function(snapshot) {
    snapshot.forEach(function(childSnapshot) {
     var childData = childSnapshot.val();
