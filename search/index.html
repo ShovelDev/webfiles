@@ -21,9 +21,13 @@
           document.write(site)
       });
   });*/
-  ref.once("value", snap => {
-    console.log(snap.key)
-    console.log(snap.val())
-  });
+ref.once('value').then(snap => {
+  o0 = snap.val()
+  console.log('In the once o0:')
+  console.log(o0) // works perfectly
+  return o0 // does indeed return o0
+}).then( in0 => {
+  // ...
+});
 
 </script>
