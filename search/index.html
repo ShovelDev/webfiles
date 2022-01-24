@@ -11,9 +11,9 @@
     appId: "1:995827631073:web:a16b96066123bf027cc8a0"
   };
   var w = localStorage.getItem("website")
-  firebaseApp.firestore().collection(w.replace('.', "-")).doc("websites").get().then(snapshot => {
-    firebase.initializeApp(firebaseConfig);
-    const db = firebase.database();
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.database();
+  firebase.firestore().collection(w.replace('.', "-")).doc("websites").get().then(snapshot => {
     const web = db.ref("websites/" + w.replace('.', "-"));
     const site = snapshot.data().score;
     document.write(site.html)
